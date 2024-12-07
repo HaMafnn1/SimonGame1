@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Simon Game</h1>
+        
+        <!-- Intro Screen -->
+        <div id="intro-screen">
+            <button id="start-btn">Start Game</button>
+            <button id="level-btn">Select Level</button>
+        </div>
+
+        <!-- Level Selection Modal -->
+        <div id="level-modal" class="hidden">
+            <button id="easy-btn">Easy</button>
+            <button id="normal-btn">Normal</button>
+            <button id="hard-btn">Hard</button>
+        </div>
+
+        <div id="score-container" class="hidden">
+            <p>Score: <span id="score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+        
+        <div class="game-buttons">
+            <div class="button" id="green"></div>
+            <div class="button" id="red"></div>
+            <div class="button" id="yellow"></div>
+            <div class="button" id="blue"></div>
+            <div class="button" id="purple"></div>
+            <div class="button" id="orange"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
